@@ -21,21 +21,24 @@ class HomePage extends StatelessWidget {
           ),
           Container(
               child: Text('Location Changer',
-                  style: TextStyle(color: Colors.white, fontSize: 25),
+                  style: TextStyle(color: Colors.white, fontSize: 20),
               )),
           Container(height: 10),
-          Container(child: Text('Plugin app for Tinder', style: TextStyle(color: Colors.white),)),
-          const SizedBox(height: 35),
+          Container(child: Text('Plugin app for Tinder', style: TextStyle(color: Colors.white, fontSize: 12),)),
+          const SizedBox(height: 45),
           SizedBox(
+            width: 300,
+            height: 60,
             child: ElevatedButton(
               style: ButtonStyle(
                   shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                       RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18.0),
+                          borderRadius: BorderRadius.circular(50.0),
                           side: BorderSide(color: Colors.red)
                       )
                   ),
-                foregroundColor: MaterialStateProperty.all<Color>(Colors.white),
+                foregroundColor: MaterialStateProperty.all<Color>(Colors.red),
+                backgroundColor: MaterialStateProperty.all<Color>(Colors.white),
               ),
               onPressed: (){},
               child: Text('Login With Facebook')
